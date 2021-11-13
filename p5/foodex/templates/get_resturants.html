@@ -1,0 +1,29 @@
+
+<html>
+<head>
+<title>Resturants</title>
+<meta charset = "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+</head>
+
+<body >
+    {% for resturant in resturant %}
+
+        <h1> {{resturant.name}} </h1>
+        <p> {{ resturant.city_name }} </p>
+        <p> {{resturant.adress}}</p>
+        <p> {{ resturant.descriptions  }} </p>
+        <p>-----------***********-------------</p>
+    
+    
+    
+    
+    {% endfor %}
+
+
+</body>
+</html>
