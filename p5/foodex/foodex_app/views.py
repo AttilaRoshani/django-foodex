@@ -17,5 +17,7 @@ def add_resturant(request):
 def home_view(request):
     return render(request, 'home.html')
     
-
+def finished(request):
+    
+    return render(request,'finished.html')
 

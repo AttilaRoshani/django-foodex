@@ -17,11 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from foodex_app.views  import get_resturant
 from foodex_app.views import add_resturant 
-from foodex_app.views import home_view
+from foodex_app.views import home_view,finished
 urlpatterns = [
     path('add_resturant/',add_resturant ),
     path('resturant_list/',get_resturant ),
     path('',home_view),    
+    path("resturant_list/finished/",finished),
     path('admin/', admin.site.urls),
 ]
 
